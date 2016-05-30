@@ -1,0 +1,222 @@
+.comment-list {
+  @include list-unstyled;
+}
+.comment-list ol {
+  list-style: none;
+}
+.comment-form p {
+  @extend .form-group;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+  @extend .form-control;
+}
+.comment-form input[type="submit"] {
+  @extend .btn;
+  @extend .btn-primary;
+}
+#comments {
+
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .comment-body {
+        border-bottom: 1px dotted #ccc;
+        margin-bottom: 30px;
+        padding-bottom: 32px;
+
+        .comment-meta {
+
+            .says {
+                color: #888;
+            }
+
+            .comment-awaiting-moderation {
+                color: #888;
+                font-size: 14px;
+                font-weight: 400;
+                }
+            }
+
+            img {
+            border-radius: 50%;
+            float: left;
+            height: 70px;
+            margin-bottom: 18px;
+            margin-right: 18px;
+            width: 70px;
+
+            }
+            .fn {
+                 color: $brand-primary;
+                a {
+                    color: $brand-primary;
+                    font-size: 16px;
+                    margin-top: 9px;
+                }
+            }
+            .comment-metadata {
+                margin-top: 6px;
+                text-transform: uppercase;
+
+                a {
+                    color: #999;
+                    font-size: 12px;
+                }
+            }
+            .comment-content {
+                color: #505050;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+                overflow: hidden;
+                margin-top: 12px;
+            }
+        }
+        .comment-reply-link {
+            color: #333;
+            background: #fff;
+            border: 1px solid #c4c4c4;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1;
+            margin-top: 16px;
+            padding: 8px 16px;
+
+            &:hover {
+                color: #fff;
+                background: $brand-primary;
+                border-color: $brand-primary;
+            }
+
+        }
+
+    }
+#respond {
+    padding-bottom: 40px;
+
+    h3{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .comment-notes {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .comment-form-comment {
+        position: relative;
+        display: block;
+        clear: both;
+        float: none;
+
+            label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+    .comment-form-author {
+        float: left;
+        padding-right: 20px;
+        width: 33.33333333333333%;
+
+        label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+    .comment-form-email {
+        float: left;
+        padding-right: 20px;
+        width: 33.33333333333333%;
+
+            label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+    .comment-form-url {
+        float: left;
+        width: 33.33333333333333%;
+
+            label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .comment-form input[type=submit] {
+        background: #fff;
+        border: 1px solid #c4c4c4;
+        border-radius: 0px;
+        color: #111;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 15px 22px;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $brand-primary;
+            border-color: $brand-primary;
+            color: #fff;
+        }
+    }
+
+    .comment-form input[type=text] {
+        border-radius: 0px;
+    }
+    .comment-form textarea {
+        border-radius: 0px;
+    }
+    .comment-form input[type=email] {
+        border-radius: 0px;
+    }
+    .comment-form input[type=url] {
+        border-radius: 0px;
+    }
+
+}
+#cancel-comment-reply-link {
+    color: #333;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-top: 16px;
+    padding: 8px 16px;
+
+    &:hover {
+        color: #fff;
+        background: $brand-primary;
+        border-color: $brand-primary;
+    }
+}
